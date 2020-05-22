@@ -5,11 +5,17 @@ class LoginForm extends Component {
     return (
       <div className="container">
         <div className="header">
-          <div className="go-back"></div>
+          <div className="go-back">
+            <img />
+            <p>Go back</p>
+          </div>
 
-          <img className="logo" />
+          <img className="logo" src="https://www.coderx.co/img/logo-dark.png"/>
+          
 
-          <div className="sign-up"></div>
+          <div className="sign-up">
+            <p>Sign up</p>
+          </div>
         </div>
 
         <div className="form">
