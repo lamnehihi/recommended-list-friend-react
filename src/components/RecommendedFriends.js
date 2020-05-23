@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FollowFriendListItem from './FollowFriendListItem';
+import FollowFriendListItem from "./FollowFriendListItem";
 
 class RecommendedFriends extends Component {
   render() {
@@ -11,15 +11,9 @@ class RecommendedFriends extends Component {
         </div>
 
         <div className="list-friend">
-          <FollowFriendListItem user={{
-            name: "Thanh Lam"
-          }}/>
-          <FollowFriendListItem user={{
-            name: "Thanh Lam"
-          }}/>
-          <FollowFriendListItem user={{
-            name: "Thanh Lam"
-          }}/>
+          {this.props.friends.map((item, index) => (
+            <FollowFriendListItem user={item} />
+          ))}
         </div>
       </div>
     );

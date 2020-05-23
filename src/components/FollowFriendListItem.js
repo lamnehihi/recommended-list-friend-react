@@ -6,7 +6,7 @@ class FollowFriendListItem extends Component {
       <div className="recommend-friend">
         <div className="info">
           <div className="avatar">
-            <img src="https://picsum.photos/id/237/300/300" />
+            <img src={this.props.user.avatar} />
           </div>
 
           <div className="name">
