@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import LoginForm from './components/LoginForm'
+import RecommendedFriends from './components/RecommendedFriends'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <LoginForm />
+        <RecommendedFriends />
       </div>
     );
   }
