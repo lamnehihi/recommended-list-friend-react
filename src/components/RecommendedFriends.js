@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import FollowFriendListItem from "./FollowFriendListItem";
 
 class RecommendedFriends extends Component {
+  constructor(props) {
+    console.log("child constructor")
+    super(props);
+  }
   render() {
+    console.log("render child constructor")
     return (
       <div className="container">
         <div className="header">
@@ -12,12 +17,25 @@ class RecommendedFriends extends Component {
 
         <div className="list-friend">
           {this.props.friends.map((item, index) => (
-            <FollowFriendListItem user={item} />
+            <FollowFriendListItem user={item} key={index}/>
           ))}
         </div>
       </div>
     );
   }
+
+  componentDidMount() {
+    console.log("mount child constructor");
+  }
+
+  componentDidUpdate() {
+    console.log("update child constructor");
+  }
+
+  componentWillUnmount() {
+    console.log("update child constructor");
+  }
+
 }
 
 export default RecommendedFriends;

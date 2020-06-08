@@ -11,7 +11,7 @@ class FollowFriendListItem extends Component {
 
           <div className="name">
             <span>{this.props.user.name}</span>
-            <span class="faded">Gợi ý cho bạn</span>
+            <span className="faded">Gợi ý cho bạn</span>
           </div>
         </div>
         <a href="#" className="follow">

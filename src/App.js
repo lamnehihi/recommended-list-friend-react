@@ -5,6 +5,7 @@ import RecommendedFriends from "./components/RecommendedFriends";
 
 class App extends Component {
   constructor() {
+    console.log("App constructor");
     super();
     this.friends = [
       {
@@ -22,6 +23,7 @@ class App extends Component {
     ];
   }
   render() {
+    console.log("App rendering");
     return (
       <div>
         <RecommendedFriends friends={this.friends} />
